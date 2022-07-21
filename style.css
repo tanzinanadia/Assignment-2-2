@@ -1,0 +1,421 @@
+/* global style start */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.main_body {
+    padding: 50px 100px 50px 100px;
+}
+
+/* global style end */
+
+
+/* hero section style start */
+.hero_section {
+    background-color: black;
+    height: 400px;
+    width: 100%;
+    border-radius: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.content {
+    color: #fff;
+    align-self: center;
+    padding-left: 50px;
+}
+
+.content h1 {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 50px;
+
+}
+
+.content p {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 26px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.button_hero {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    text-align: center;
+    padding: 10px 30px;
+    background: #DD0000;
+    border-radius: 5px;
+    color: white;
+}
+.hero_hover:hover{
+    background-color: #fff;
+    color: #161616;
+}
+
+.hero_image {
+    position: relative;
+    height: 100%;
+
+}
+
+.hero_image img {
+    position: absolute;
+    bottom: 0;
+    right: 150px;
+
+}
+
+/* hero section style end */
+
+/* player card section style start */
+.player_card_section {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    padding-top: 50px;
+    grid-gap: 10px;
+}
+
+.nav {
+    background-color: black;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.nav button {
+    background-color: white;
+    padding: 10px 30px;
+    margin-bottom: 5px;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #e8e8e8;
+
+}
+
+.nav .blog_button {
+    background-color: #DD0000;
+    color: #fff;
+    border: none;
+
+}
+
+.player_cards {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+
+}
+
+.card {
+    border: 1px solid #e8e8e8;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.card .head {
+    display: grid;
+    grid-template-columns: 3fr 1fr 3fr;
+    grid-gap: 10px;
+}
+.card .bottom{
+    text-align: center;
+    padding-top: 20px;
+}
+
+.view_button {
+    display: none;
+}
+
+
+
+
+
+
+/* player card section style end */
+
+/* footer style start */
+footer {
+    background-color: #161616;
+    height: 444px;
+    color: #fff;
+    text-align: center;
+    padding: 100px 100px;
+
+}
+
+
+
+
+hr.style_one {
+    border: 0;
+    height: 0;
+    background: #fff;
+
+}
+
+
+.goal_form h1 {
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 50px 200px;
+    outline: none;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.footer_list {
+    padding-top: 50px;
+
+}
+
+.footer_list ul {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.footer_list ul a {
+    color: #ffffff;
+    text-decoration: none;
+
+}
+
+.footer_list li {
+    padding: 0 10px;
+}
+
+.list_inline {
+    display: inline-flex;
+}
+
+.footer_list .social a {
+    text-align: center;
+    padding: 3px;
+    color: coral;
+}
+
+/* footer style end */
+
+
+
+
+/* responsive for tab device start */
+@media (min-width:768px) and (max-width:992px) {
+    .main_body {
+        padding: 50px 50px 50px 50px;
+    }
+
+
+    /* hero section style start */
+    .hero_section {
+        background-color: black;
+        height: 400px;
+        width: 100%;
+        border-radius: 30px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .content {
+        color: #fff;
+        align-self: center;
+        padding-left: 50px;
+    }
+
+    .content h1 {
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 40px;
+
+    }
+
+    .content p {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 26px;
+        padding: 1 0px 0;
+    }
+
+
+
+
+    .hero_image img {
+        position: absolute;
+        bottom: 0;
+        right: 40px;
+        width: 80%;
+
+    }
+
+    /* hero section style end */
+
+    /* player card section style start */
+    .player_card_section {
+        grid-template-columns: 1fr;
+        padding-top: 20px;
+        grid-gap: 10px;
+    }
+
+    .nav {
+        background-color: rgb(255, 255, 255);
+        display: flex;
+    }
+
+    .player_cards {
+
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+
+    }
+
+    .view_button {
+        display: block;
+        text-align: center;
+    }
+
+    /* player card section style end */
+
+    /* footer style start */
+    footer {
+        height: auto;
+        padding: 100px 20px;
+
+    }
+
+
+    .goal_form h1 {
+        padding: 50px 0px;
+        font-weight: 600;
+    }
+
+    .footer_list {
+        padding-top: 50px;
+
+    }
+
+    .footer_list li {
+        padding: 5px 10px;
+    }
+
+    .list_inline {
+        display: inline-flex;
+    }
+
+    /* footer style end */
+}
+
+
+
+/* responsive for mobile device start */
+@media (max-width:576px) {
+    .main_body {
+        padding: 50px 20px 50px 20px;
+    }
+
+    /* hero section style start */
+    .hero_section {
+        height: 550px;
+        border-radius: 10px;
+        grid-template-columns: 1fr;
+    }
+
+    .content {
+        text-align: center;
+        padding-left: 0;
+        padding: 10px;
+        align-self: start;
+        padding-top: 50px;
+    }
+
+    .content h1 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .content p {
+        padding-top: 22px;
+        padding-bottom: 25px;
+    }
+
+    .hero_image {
+        position: static;
+        height: 100%;
+        justify-self: center;
+        width: 100%;
+
+
+    }
+
+    .hero_image img {
+        position: static;
+        width: 65%;
+        padding: 17px 0 0 80px;
+
+    }
+
+    /* hero section style end */
+
+    /* player card section style start */
+    .player_card_section {
+        grid-template-columns: 1fr;
+        padding-top: 20px;
+        grid-gap: 10px;
+    }
+
+    .nav {
+        background-color: rgb(255, 255, 255);
+        display: inline;
+    }
+
+    .player_cards {
+
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+
+    }
+
+
+    /* player card section style end */
+
+    /* footer style start */
+    footer {
+        height: auto;
+        padding: 100px 20px;
+
+    }
+
+
+    .goal_form h1 {
+        padding: 50px 0px;
+        font-weight: 600;
+    }
+
+    .footer_list {
+        padding-top: 50px;
+
+    }
+
+    .footer_list li {
+        padding: 5px 0px;
+    }
+
+    .list_inline {
+        display: inline;
+    }
+
+    /* footer style end */
+}
